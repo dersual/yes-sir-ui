@@ -1,0 +1,52 @@
+@import url("../global.css");
+
+.first {
+  height: clamp(300px, 80vw, 450px); 
+  padding: 45px 90px;
+}
+.background {
+  min-height: calc(100% - clamp(300px, 90vw, 450px));
+}
+.landing-page-logo {
+  height: clamp(200px, 60vw, 315px) !important;
+  rotate: 350deg;
+}
+.seperator {
+  width: 0;
+  height: 0;
+  border-left: 100vw solid transparent;
+  border-bottom: 20vw solid #f3f6fc;
+  margin-top: -20vw;
+} 
+.about-container { 
+    position: relative; 
+    top: -10vw; /*To Be Dynamic*/
+    right: 0;
+}  
+.form input{
+    margin-bottom: 12px;
+    border-radius: 3px;
+  } 
+  
+@media screen and (max-width: 575px) {
+    .about-container { 
+        top: -10px
+    } 
+    .about-container > .text { 
+        text-align: right;
+    }
+}
+
+@media screen and (max-width: 675px) {
+  .first {
+    background: var(--primary);
+    background: radial-gradient(circle, var(--primary) 50%, var(--accent) 100%);
+  }
+  .first > div { 
+    justify-content: center !important;
+  }  
+
+  .about-container { 
+    justify-content: center;
+  }
+}

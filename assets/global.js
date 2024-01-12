@@ -1,4 +1,4 @@
-let contentToReturn; 
+/*let contentToReturn; 
 
 function returnContent (page) {  
 
@@ -13,4 +13,4 @@ function returnContent (page) {
         default: 
 
     } 
-}
+}*/
